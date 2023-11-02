@@ -1,0 +1,43 @@
+.container {
+  margin-top: 20px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  //   background-color: red;
+  color: white;
+  width: 100vw;
+  .logo_container {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .links_container {
+    .desk_menu_container {
+      display: flex;
+      gap: 20px;
+      li a {
+        align-items: center;
+      }
+    }
+    .icon {
+      display: none;
+    }
+    .mob_menu_container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .links_container {
+      .desk_menu_container {
+        display: none;
+      }
+      .icon {
+        display: block;
+        font-size: 30px;
+      }
+    }
+  }
+}
